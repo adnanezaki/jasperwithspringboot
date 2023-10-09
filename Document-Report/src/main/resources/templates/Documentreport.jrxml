@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="821702de-9b4f-4009-a3ee-71bbfbc29270">
+	<parameter name="nomdeContract" class="java.lang.String"/>
+	<parameter name="extension de document" class="java.lang.String"/>
+	<parameter name="association" class="java.lang.String"/>
+	<parameter name="sg" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="140" splitType="Stretch">
+			<frame>
+				<reportElement x="-20" y="0" width="595" height="79" uuid="921b2404-a8d6-4505-a683-9038915ca8fc"/>
+				<staticText>
+					<reportElement mode="Opaque" x="4" y="60" width="573" height="40" forecolor="#3D87F5" backcolor="#050505" uuid="c4c4dd40-256e-4a0d-90cd-dd1579d05626">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.firstLineIndent" value="px"/>
+						<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center" markup="styled">
+						<font size="15" isBold="true" isItalic="true" isUnderline="true" isStrikeThrough="false"/>
+						<paragraph lineSpacingSize="0.0" firstLineIndent="20" spacingBefore="15"/>
+					</textElement>
+					<text><![CDATA[Contrat de travail à durée déterminée (CDD)]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="240" y="20" width="100" height="30" forecolor="#FFFFFF" uuid="e658924d-9310-4060-9779-13ae976eb202"/>
+					<box>
+						<pen lineColor="#050505"/>
+					</box>
+					<textFieldExpression><![CDATA[$P{nomdeContract}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Transparent" x="410" y="110" width="129" height="20" forecolor="#050505" backcolor="#0D0D0D" uuid="e3fe0984-7ef6-4d0c-9451-d914e965860b">
+						<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+					</reportElement>
+					<textElement>
+						<paragraph spacingBefore="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{extension de document}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="370" y="0" width="100" height="20" uuid="7279f3c5-8055-4992-8728-c8ae67c25a1c"/>
+				<text><![CDATA[Report Generated on]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="470" y="0" width="100" height="20" uuid="e639e08e-c207-4c58-9624-ba415ee0d2f5"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="0" width="166" height="20" uuid="31554c2b-17da-41d5-a379-5a0dc4310236"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Attention : il convient de rappeler ici]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="20" width="467" height="41" uuid="5bccf1ee-f2e2-4c25-9c54-206000b113cc"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[+ que les contrats à durée déterminée ainsi que les contrats à temps partiel doivenyt comporter des cluases obligatoires.
++Le modéle de contrat prsente ci-après, prècise quelles sont ces clauses,que tout contrat de travail doit etre remis au plus tard dans les deux jours qui suivent l'embauche,que la convention collective nationale du sport complétera et améliorera les dispositions du code du travail.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="172" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="10" width="110" height="20" uuid="d7120cee-0535-4a90-b88b-c0a8c270383c"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contrat de travail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="30" width="130" height="20" uuid="3021abae-8afa-4b10-98a2-389c3e7dfb5d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Entre les soussingés l'association ]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="200" y="30" width="80" height="20" forecolor="#050505" backcolor="#0D0D0D" uuid="ba034416-f817-4b12-8970-74ab10394573">
+					<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+				</reportElement>
+				<textElement>
+					<paragraph spacingBefore="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{association}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="30" width="101" height="20" uuid="4099e68d-5ba5-4ecb-901d-d98cad30d7dc"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[dont le siège social est sis ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="30" width="69" height="20" uuid="7c5d1c29-55b1-438b-9682-de8448efeb8d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[représenté par M]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="381" y="30" width="49" height="20" forecolor="#050505" backcolor="#0D0D0D" uuid="751adbdc-f60a-4dd6-8448-c032f3665a45">
+					<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+				</reportElement>
+				<textElement>
+					<paragraph spacingBefore="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sg}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
